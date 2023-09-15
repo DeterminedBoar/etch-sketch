@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 2rem;
+    overflow: auto;
+}
+
+#title-section {
+    font-size: 2em;
+    text-align: center;
+    padding: 2rem;
+    color: teal;
+}
+
+input {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* Grid Section*/
+.grid-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid-content {
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid-options {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: teal;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: grey;
+    border-width: 1px;
+}
+.grid-options >* {
+    margin: 0.5rem 0;
+}
+
+.color-picker {
+    width: 58px;
+    height: 60px;
+    border-style: none;
+}
+
+.color-picker::-webkit-color-swatch {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border-style: solid;
+    border-radius: 100px;
+}
+
+.grid-options button {
+    color: teal;
+    padding: 5px 15px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: rgb(143, 143, 143);
+    border-width: 1px;
+}
+
+.grid-options button:hover {
+    background-color: rgb(211, 211, 211);
+    transition: background-color 0.25s ease-out 0.5ms;
+}
+
+.grid-options button:active {
+    background-color: rgb(126, 126, 126);
+    transition: background-color 0.25s ease-out 0.5ms;
+}
+
+.tile {
+    cursor: pointer;
+}
